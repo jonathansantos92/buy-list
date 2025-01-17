@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>QuickList</title>
+</head>
+<body>
+    
+    
+    <div class="wrapper">
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo QuickList">
+        </div>
+
+        <div class="header">
+            <a href="">Voltar</a>
+            <h2>Compras da Semana</h2>
+        </div>
+
+            <div class="new_item">
+                <input type="text" placeholder="Adicione um novo item" name="item_name" id="item_name">
+                <button onclick="addItem(document.getElementById('item_name').value)">Adicionar Item</button>
+            </div>
+            
+        <div id="buy-items">
+            <h2>Itens à comprar</h2>
+                  
+        </div>
+
+        <div id="buyed-items">
+            <h2>Itens comprados</h2>
+            
+        </div>
+        
+        <div class="alert hide">
+            <div class="item-wrapper">
+                <img src="assets/warning-circle-filled.svg" alt="">
+                <span>O item for removido da lista</span>
+            </div>
+            <a onclick="hideMessage()" class="delete"></a>
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
