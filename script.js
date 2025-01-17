@@ -65,13 +65,7 @@ function strikeLine(item_name){
     const divItem = input.parentElement.parentElement
     const divBuyed = document.getElementById('buyed-items')
     const divBuy = document.getElementById('buy-items')
-
-    console.log('item_name: ',item_name)
-    console.log('input: ',input)
-    console.log('divItem: ',divItem)
-    console.log('divBuyed: ',divBuyed)
-    console.log('divBuy: ',divBuy)
-
+    
     if(input.nextSibling.classList.contains('strike-throught')){
         divBuy.appendChild(divItem)
         input.nextSibling.classList.remove('strike-throught')
